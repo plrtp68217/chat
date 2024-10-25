@@ -1,6 +1,9 @@
 <template>
 
-    <input class="input" :type="props.input_type">
+    <input
+        class="input" 
+        :type="props.input_type"
+        :placeholder="props.holder">
 
 </template>
  
@@ -9,6 +12,7 @@
 
 const props = defineProps([
     'input_type',
+    'holder'
 ])
  
 </script>

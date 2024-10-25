@@ -1,9 +1,11 @@
 <template>
  <div class="form">
     <InputComponent
-        :input_type="'text'"/>
+        :input_type="'text'"
+        :holder="'username'"/>
     <InputComponent
-        :input_type="'password'"/>
+        :input_type="'password'"
+        :holder="'password'"/>
     <ButtonComponent/>
 </div>
 </template>
