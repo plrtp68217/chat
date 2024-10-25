@@ -3,9 +3,7 @@
         
         <div class="second_companion">
 
-          <div class="second_companion_avatar">
-
-          </div>
+          <AvatarComponent/>
 
           <div class="second_companion_name">
             Username
@@ -43,7 +41,7 @@
 
 
 <script setup>
-import MessageComponent from './MessageComponent.vue';
+import AvatarComponent from './AvatarComponent.vue';
 
 </script>
 

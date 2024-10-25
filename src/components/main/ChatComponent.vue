@@ -1,8 +1,6 @@
 <template>
     <div class="chat">
-        <div class="chat_avatar">
-            <img class="chat_avatar_image" src="@/images/avatar.png">
-        </div>
+        <AvatarComponent/>
         <div class="chat_username_last_message">
             <div class="username">
                 <b>Username</b>
@@ -19,7 +17,9 @@
     </div>
 
 </template>
-<script setup> 
+
+<script setup>
+import AvatarComponent from './AvatarComponent.vue';
 
 </script>
 
@@ -42,20 +42,6 @@
     cursor: pointer;
 }
 
-.chat_avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid #1A1A1D;
-  
-}
-
-.chat_avatar_image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .chat_username_last_message {
     padding: 2px;
