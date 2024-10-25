@@ -1,24 +1,28 @@
 <template>
-  <div class="main_container">
+  <div class="main_backgound">
+    <div class="main_container">
 
-    <div class="chats_container">
-      <div v-for="i in 100">
-        <ChatComponent/>
+      <div class="chats_container">
+        <div v-for="i in 100">
+          <ChatComponent/>
+        </div>
       </div>
-    </div>
 
-    <div class="second_chat_container">
-      <SecondChatComponent/>
+      <div class="second_chat_container">
+        <SecondChatComponent/>
+      </div>
+
     </div>
 
   </div>
+
 
 </template>
 
 
 <script setup>
-import ChatComponent from '@/components/ChatComponent.vue';
-import SecondChatComponent from '@/components/SecondChatComponent.vue';
+import ChatComponent from '@/components/main/ChatComponent.vue';
+import SecondChatComponent from '@/components/main/SecondChatComponent.vue';
 
 </script>
 
@@ -26,17 +30,23 @@ import SecondChatComponent from '@/components/SecondChatComponent.vue';
 
 <style scoped>
 
+
+/* фон общий */
+.main_backgound {
+  background-color: #1A1A1D;
+  color: white;
+}
+
 .main_container {
   width: 900px;
   height: 100vh;
   margin: 0 auto;
   display: flex;
-  border: 1px solid #19B4F7;
 }
 
 .chats_container {
+  background-color: #2E2E2E;
   width: 310px;
-  border: 1px solid #19B4F7;
   height: 100vh;
   box-sizing: border-box;
   overflow-y: hidden;
@@ -50,7 +60,6 @@ import SecondChatComponent from '@/components/SecondChatComponent.vue';
 .second_chat_container {
   width: 590px;
   height: 100vh;
-  border: 1px solid #19B4F7;
 }
     
 </style>

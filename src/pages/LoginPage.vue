@@ -15,7 +15,7 @@
 
 
 <script setup>
-import FormComponent from '@/components/FormComponent.vue';
+import FormComponent from '@/components/login/FormComponent.vue';
 
 </script>
 

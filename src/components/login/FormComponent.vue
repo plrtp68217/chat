@@ -14,8 +14,8 @@
 
 
 <script setup>
-import InputComponent from '@/components/InputComponent.vue';
-import ButtonComponent from '@/components/ButtonComponent.vue';
+import InputComponent from '@/components/login/InputComponent.vue';
+import ButtonComponent from '@/components/login/ButtonComponent.vue';
 
 
 </script>

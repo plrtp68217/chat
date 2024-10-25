@@ -28,7 +28,7 @@ const props = defineProps([
 
 .message {
     padding: 2px 5px;
-    background-color: #19B4F7;
+    background-color: #2E2E2E;
     color: white;
     border-radius: 10px;
 }
