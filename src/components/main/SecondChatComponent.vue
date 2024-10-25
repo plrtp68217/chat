@@ -42,6 +42,7 @@
 
 <script setup>
 import AvatarComponent from './AvatarComponent.vue';
+import MessageComponent from './MessageComponent.vue';
 
 </script>
 
@@ -94,8 +95,17 @@ import AvatarComponent from './AvatarComponent.vue';
     outline: none;
     border: none;
     padding: 5px;
-    background-color: #2e2e2e;
+    background-color: #2E2E2E;
     color: white;
+}
+
+.send_button {
+    background-color: #4E4E50;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    padding: 2px 5px;
+    margin-right: 5px;
 }
 
 

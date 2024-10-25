@@ -1,7 +1,8 @@
 <template>
     <div class="message_container">
         <div :class="{'owner_message': props.owner, 'foreign_message': !props.owner, 'message': true}">
-            {{ text }}
+            <div class="message_text">{{ props.text }}</div>
+            <div class="message_time">16:50</div>
         </div>
     </div>
 </template>
@@ -28,7 +29,7 @@ const props = defineProps([
 
 .message {
     padding: 2px 5px;
-    background-color: #2E2E2E;
+    background-color: #4E4E50;
     color: white;
     border-radius: 10px;
 }
