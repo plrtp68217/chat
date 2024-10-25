@@ -2,10 +2,12 @@
  <div class="form">
     <InputComponent
         :input_type="'text'"
-        :holder="'username'"/>
+        :holder="'username'"
+    />
     <InputComponent
         :input_type="'password'"
-        :holder="'password'"/>
+        :holder="'password'"
+    />
     <ButtonComponent/>
 </div>
 </template>

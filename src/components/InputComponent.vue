@@ -3,7 +3,8 @@
     <input
         class="input" 
         :type="props.input_type"
-        :placeholder="props.holder">
+        :placeholder="props.holder"
+    >
 
 </template>
  
