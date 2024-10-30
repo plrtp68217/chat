@@ -82,21 +82,22 @@ import MessageComponent from './MessageComponent.vue';
     align-items: center;
     overflow: hidden;
     background-color: #2E2E2E;
+    padding: 5px;
 }
 
 .input_area {
     width:550px;
-    max-width:550px;
-    min-width: 550px;
+    max-width:540px;
+    min-width: 540px;
     height: 45px;
     max-height: 45px;
     min-height: 45px;
     resize: none;
     outline: none;
     border: none;
-    padding: 5px;
     background-color: #2E2E2E;
     color: white;
+    font-size: 15px;
 }
 
 .send_button {
@@ -105,7 +106,7 @@ import MessageComponent from './MessageComponent.vue';
     border-radius: 20%;
     color: white;
     padding: 2px 5px;
-    margin-right: 5px;
+    margin-left: 2px;
 }
 
 
