@@ -1,7 +1,7 @@
 <template>
     <div class="second_chat">
         
-        <div class="second_companion">
+        <div class="second_companion" :class="{'background_light': $store.state.theme, 'background_dark': !$store.state.theme}">
 
           <AvatarComponent/>
 
@@ -30,8 +30,8 @@
             />
         </div>
 
-        <div class="second_input">
-            <textarea class="input_area"></textarea>
+        <div class="second_input" :class="{'background_light': $store.state.theme, 'background_dark': !$store.state.theme}">
+            <textarea class="input_area" :class="{'background_light': $store.state.theme, 'background_dark': !$store.state.theme}"></textarea>
             <button class="send_button">send</button>
 
         </div>
@@ -60,7 +60,16 @@ import MessageComponent from './MessageComponent.vue';
     padding: 5px;
     display: flex;
     align-items: center;
+}
+
+.background_light {
+    background-color: rgb(219, 218, 218);
+    color: #2E2E2E;
+}
+
+.background_dark {
     background-color: #2E2E2E;
+    color: white;
 }
 
 .second_companion_avatar {
@@ -81,7 +90,6 @@ import MessageComponent from './MessageComponent.vue';
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: #2E2E2E;
     padding: 5px;
 }
 
@@ -95,8 +103,6 @@ import MessageComponent from './MessageComponent.vue';
     resize: none;
     outline: none;
     border: none;
-    background-color: #2E2E2E;
-    color: white;
     font-size: 15px;
 }
 

@@ -2,7 +2,7 @@ import {createStore} from 'vuex';
 
 const store = createStore({
     state: {
-        dark_theme: false,
+        theme: false, // false - темная, true - светлая
     },
 
     getters: {
@@ -11,7 +11,7 @@ const store = createStore({
 
     mutations: {
         changeTheme(state) {
-            state.dark_theme = !state.dark_theme;
+            state.theme = !state.theme;
         },
     },
 

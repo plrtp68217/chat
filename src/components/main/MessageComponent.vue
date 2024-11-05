@@ -1,12 +1,14 @@
 <template>
     <div class="message_container">
-        <div class="message" :class="{'owner_message': props.owner, 'foreign_message': !props.owner}">
+        <div class="message" :class="{'owner_message': props.owner,
+                                      'foreign_message': !props.owner,
+                                      'light_theme': $store.state.theme,
+                                      'dark_theme': !$store.state.theme}">
             <div class="message_text">{{ props.text }}</div>
             <div class="message_time">16:50</div>
         </div>
     </div>
 </template>
-
 
 <script setup>
 
@@ -15,8 +17,6 @@ const props = defineProps([
     'text',
     'date',
 ]);
-
-
 
 </script>
 
@@ -30,9 +30,17 @@ const props = defineProps([
 .message {
     display: flex;
     padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.dark_theme {
     background-color: #4E4E50;
     color: white;
-    border-radius: 10px;
+}
+
+.light_theme {
+    background-color: rgb(219, 218, 218);
+    color: #4E4E50;
 }
 
 .message_time {

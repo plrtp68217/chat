@@ -1,5 +1,5 @@
 <template>
-    <div class="chat">
+    <div class="chat" :class="{'chat_light': $store.state.theme, 'chat_dark': !$store.state.theme}">
         <AvatarComponent/>
         <div class="chat_username_last_message">
             <div class="username">
@@ -37,11 +37,15 @@ import AvatarComponent from './AvatarComponent.vue';
     padding: 5px;
 }
 
-.chat:hover {
+.chat_dark:hover {
     background-color: #4E4E50;
     cursor: pointer;
 }
 
+.chat_light:hover {
+    background-color: #b6b6bd;
+    cursor: pointer;
+}
 
 .chat_username_last_message {
     padding: 2px;
