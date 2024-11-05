@@ -31,6 +31,7 @@ const props = defineProps([
     display: flex;
     padding: 2px 5px;
     border-radius: 10px;
+    transition: all 200ms;
 }
 
 .dark_theme {
@@ -40,7 +41,7 @@ const props = defineProps([
 
 .light_theme {
     background-color: rgb(219, 218, 218);
-    color: #4E4E50;
+    color: #2E2E2E;
 }
 
 .message_time {

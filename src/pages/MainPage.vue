@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'light_theme_main': $store.state.theme, 'dark_theme_main': !$store.state.theme}">
+  <div class="main_background" :class="{'light_theme_main': $store.state.theme, 'dark_theme_main': !$store.state.theme}">
     <div class="main_container">
 
       <div class="chats_container" :class="{'chats_container_light': $store.state.theme, 'chats_container_dark': !$store.state.theme}">
@@ -32,6 +32,10 @@ import SecondChatComponent from '@/components/main/SecondChatComponent.vue';
 
 
 /* фон общий */
+.main_background {
+  transition: all 200ms;
+}
+
 .dark_theme_main {
   background-color: #1A1A1D;
   color: white;
