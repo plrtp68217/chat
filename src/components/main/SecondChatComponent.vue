@@ -32,7 +32,7 @@
 
         <div class="second_input" :class="{'background_light': $store.state.theme, 'background_dark': !$store.state.theme}">
             <textarea class="input_area" :class="{'background_light': $store.state.theme, 'background_dark': !$store.state.theme}"></textarea>
-            <button class="send_button">send</button>
+            <button class="send_button">></button>
 
         </div>
         
@@ -113,9 +113,12 @@ import MessageComponent from './MessageComponent.vue';
     color: white;
     padding: 2px 5px;
     margin-left: 2px;
+    transition: all 200ms linear;
 }
 
-
+.send_button:hover {
+    transform: scale(1.05);
+}
 
     
 </style>
